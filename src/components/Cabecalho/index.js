@@ -8,6 +8,9 @@ const Cabecalho = () => {
             <Link to="./">
                 <img src={logo} alt="logo do cine tag"></img>
             </Link>
+            <nav>
+
+            </nav>
         </header>
     )
 }
