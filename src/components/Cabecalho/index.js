@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import logo from './logo.png'
 import styles from './Cabecalho.module.css'
+import CabecalhoLink from "components/CabecalhoLink"
 
 const Cabecalho = () => {
     return(
@@ -9,7 +10,8 @@ const Cabecalho = () => {
                 <img src={logo} alt="logo do cine tag"></img>
             </Link>
             <nav>
-
+                <CabecalhoLink url = "./">Home</CabecalhoLink>
+                <CabecalhoLink url = "./Favoritos">Favoritos</CabecalhoLink>
             </nav>
         </header>
     )
