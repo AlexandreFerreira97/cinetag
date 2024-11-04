@@ -1,8 +1,12 @@
-const { default: Cabecalho } = require("components/Cabecalho")
+import Rodape from "components/Rodape"
+import Cabecalho from "components/Cabecalho"
 
 const Inicio = () => {
     return(
-        <Cabecalho/>
+        <>
+            <Cabecalho/>
+            <Rodape/>
+        </>
     )
 }
 
