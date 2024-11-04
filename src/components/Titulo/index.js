@@ -1,8 +1,10 @@
 import styles from './Titulo.module.css'
 
-const Titulo = () => {
+const Titulo = ({children}) => {
     return(
-
+        <div className={styles.texto}>
+            {children}
+        </div>
     )
 }
 
