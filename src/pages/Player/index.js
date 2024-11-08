@@ -3,10 +3,16 @@ import bannerFavoritos from '../../assets/banner-player.png'
 import Titulo from 'components/Titulo'
 import { useParams } from 'react-router-dom'
 import videos from "json/db.json"
+import NaoEncontrada from 'pages/NaoEncontrada'
 
 const Player = () => {
     const parametros = useParams();
     const video = videos.find((video) => {return video.id === Number(parametros.id)});
+
+    if(!video){
+        return <NaoEncontrada/>
+    }
+
     return(
         <>
             <div>
